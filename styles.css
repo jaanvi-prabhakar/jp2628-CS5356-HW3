@@ -1,17 +1,19 @@
-body{
-    margin:0;
+/* General Styles */
+body {
+    margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #0d0d0d;
     color: white;
 }
 
-header{
+/* Navigation Bar */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     width: 100%;
     top: 0;
@@ -19,7 +21,12 @@ header{
     z-index: 1000;
 }
 
-.nav-links{
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
 }
@@ -28,35 +35,194 @@ header{
     margin: 0 15px;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
-    font-size: 1rem;
     color: white;
+    font-size: 1rem;
     transition: color 0.3s;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: #00aaff;
 }
 
-.hero{
+/* Hero Section */
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: left;
     padding: 100px 50px;
-    
 }
 
-.hero-content{
+.hero-content {
     max-width: 600px;
 }
 
-.hero h2{
+.hero h2 {
     font-size: 3rem;
 }
 
-.hero h2 span{
+.hero h2 span {
     color: #00aaff;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    color: #00aaff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0088cc;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #00aaff;
+    color: #00aaff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #00aaff;
+    color: white;
+}
+
+/* Experience Section */
+.experience {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: #121212;
+}
+
+.experience h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #00aaff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.job {
+    width: 800px;
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.job:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.3);
+}
+
+.job h3 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.job ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #ddd;
+}
+
+.job ul li {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: #121212;
+}
+
+.projects h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #00aaff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.3);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    display: inline-block;
+    background: rgba(0, 170, 255, 0.2);
+    color: #00aaff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 8px;
 }
