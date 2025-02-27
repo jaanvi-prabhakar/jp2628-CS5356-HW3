@@ -53,7 +53,7 @@ header {
     align-items: center;
     height: 100vh;
     text-align: left;
-    padding: 50px 50px;
+    padding: 50px 20px;
 }
 
 .hero-content {
@@ -62,6 +62,7 @@ header {
 
 .hero h2 {
     font-size: 3rem;
+    line-height: 1.2;
 }
 
 .hero h2 span {
@@ -81,8 +82,10 @@ header {
 .hero_img{
     margin: 10%;
     padding: 10%;
-    border-radius: 5rem;
+    border-radius: 3rem;
+    width: 80%;
 }
+
 .btn {
     background-color: #00aaff;
     color: white;
@@ -112,6 +115,50 @@ header {
     color: white;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.8rem;
+    }
+
+    .hero_img {
+        width: 60%;
+        height: auto;
+        margin: 0;
+    }
+
+    .hero .btn,
+    .hero .btn-outline {
+        width: 40%;
+
+    }
+}
+
+/* ========== Tablet Screens ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2.8rem;
+    }
+
+    .hero_img {
+        width: 70%;
+        margin: 0;
+    }
+}
+
 /* Experience Section */
 .experience {
     padding: 100px 50px;
@@ -133,6 +180,8 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .job {
@@ -173,6 +222,41 @@ header {
     margin: 8px 0;
     font-size: 1rem;
     line-height: 1.6;
+}
+
+/* ========== Mobile Screens ========== */
+@media (max-width: 768px) {
+    .experience {
+        padding: 50px 20px; /* Reduce padding */
+    }
+
+    .job {
+        width: 100%; /* Full width for better spacing */
+        padding: 20px;
+    }
+
+    .job h3 {
+        font-size: 1.5rem;
+    }
+
+    .job p {
+        font-size: 1rem;
+    }
+
+    .job ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========== Tablet Screens ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .experience {
+        padding: 80px 30px;
+    }
+
+    .job {
+        width: 90%;
+    }
 }
 
 /* Projects Section */

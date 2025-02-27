@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
-<style>
-    
-</style>
 <body>
     <header>
         <nav>
+            <div class="nav-toggle" onclick="toggleNav()">☰</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <!-- <li><a href="#services">Services</a></li> -->
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -25,28 +22,20 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2> Hi, I'm <span>Jaanvi Prabhakar</span> </h1>
-            <h3>Software Developer</h2>
+            <h2> Hi, I'm <span>Jaanvi Prabhakar</span></h2>
+            <h3>Software Developer</h3>
             <p>Passionate about building software solutions.</p>
             <button class="btn" onclick="window.open('https://drive.google.com/file/d/1E4DzMChbpNNzVf0A0z6yv4Qv93YAdGYa/view?usp=sharing','_blank')">Hire Me</button>
             <button class="btn-outline" onclick="window.open('https://www.linkedin.com/in/jaanvi-prabhakar/','_blank')">LinkedIn</button>
-            <!-- Calendly badge widget begin -->
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/jaanviprabhakar5/30min', text: 'Let\'s Talk', color: '#0069ff', textColor: '#ffffff' }); }</script>
-            <!-- Calendly badge widget end -->
         </div>
         <div>
-            <img src = "hero.jpg" alt="Jaanvi Prabhakar" class="hero_img" >
+            <img src="hero.jpg" alt="Jaanvi Prabhakar" class="hero_img">
         </div>
-        </section>
-        <script src="script.js"></script>
-     </section>
+    </section>
 
-
-     <section id="experience" class="experience">
+    <section id="experience" class="experience">
         <h2>Experience</h2>
         <div class="experience-container">
-
             <div class="job">
                 <h3>Hewlett Packard Enterprise</h3>
                 <p><strong>Cloud Developer</strong> | Jan 2022 - Jun 2024</p>
@@ -57,65 +46,28 @@
                     <li>Recognized among top 30 out of 6,000 nominees for Techcon 2024 in Texas, USA.</li>
                 </ul>
             </div>
-            <div class="job">
-                <h3>Siemens Technology India</h3>
-                <p><strong>Software Development Intern</strong> | Jun 2021 - Aug 2021</p>
-                <ul>
-                    <li>Developed 20% of new features for the Smart Estimator tool using Angular, C#, .Net.</li>
-                    <li>Designed and implemented MVC-based features for modularity and scalability.</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <h3>Dhayas Foundation</h3>
-                <p><strong>Web Developer</strong> | Jun 2021 - Aug 2021</p>
-                <ul>
-                    <li>Created wireframes for website.</li>
-                    <li>Developed website using HTML,CSS,JS, Bootstrap. </li>
-                </ul>
-            </div>
-            
         </div>
-     </section>
+    </section>
 
-
-     <section id="services" class="services">
-
-     </section>
-
-     <section id="projects" class="projects">
+    <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project">
                 <h3>Anomaly Detection in GreenLake Cloud Platform</h3>
-                <h4> Hewlett Packard Enterprise </h4>
+                <h4>Hewlett Packard Enterprise</h4>
                 <p>Developed a cloud-based anomaly detection system using Python and ML, presented to 500+ attendees.</p>
-                <span class = "tech-stack">Python, ML, Audit Log</span>
-            </div>
-
-            <div class="project">
-                <a href="https://drive.google.com/file/d/1c_mb3bvlj-ttO6aGKP5fLIooRaBE4weN/view" target="_blank"><h3>Code-Switch Spoken Language Indentification</h3></a>
-                <h4> Samsung PRISM </h4>
-                <p>Created a dataset and trained CNN & RNN models for spoken language identification with 91% and 97% accuracy.</p>
-                <span class="tech-stack">Python, NLP, ML</span>
-            </div>
-
-            <div class="project">
-                <a href="https://devpost.com/software/he-4" target="_blank"><h3>Smartisation of Anti Anti-Infiltration Obstacle System</h3></a>
-                <h4>Defence Hackathon SRM 2021</h4>
-                <p>Implemented an Anti-Infiltration System using OpenCV to detect suspicious activity in surveillance footage.</p>
-                <span class="tech-stack">Python, OpenCV</span>
+                <span class="tech-stack">Python, ML, Audit Log</span>
             </div>
         </div>
-     </section>
+    </section>
 
-     <section id="recommend-book" class="recommend">
+    <section id="recommend-book" class="recommend">
         <h2>📖 Recommend Me a Book</h2>
         <p>Search for a book and recommend for me to read it!</p>
 
         <div class="recommend-container">
             <input type="text" id="book-search" placeholder="Search for a book..." />
-            <button class="btn">Search</button>
+            <button class="search-btn">Search</button>
         </div>
 
         <div id="search-results"></div>
@@ -123,7 +75,7 @@
         <ul id="recommended-books"></ul>
     </section>
 
-     <section id="contact" class="contact">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <form>
             <input type="text" placeholder="Your Name" required>
@@ -132,11 +84,10 @@
             <button type="submit">Send Message</button>
         </form>
 
-        <h3> 📍Where To Find Me </h3>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.57160210945!2d-73.95744002389645!3d40.75573833493671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258dea6616d51%3A0x78a01682d5d8faf4!2s1%20E%20Loop%20Rd%2C%20New%20York%2C%20NY%2010044!5e0!3m2!1sen!2sus!4v1740690160386!5m2!1sen!2sus" width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3>📍Where To Find Me</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.57160210945!2d-73.95744002389645!3d40.75573833493671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258dea6616d51%3A0x78a01682d5d8faf4!2s1%20E%20Loop%20Rd%2C%20New%20York%2C%20NY%2010044!5e0!3m2!1sen!2sus!4v1740690160386!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
