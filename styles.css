@@ -53,7 +53,7 @@ header {
     align-items: center;
     height: 100vh;
     text-align: left;
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 
 .hero-content {
@@ -79,9 +79,9 @@ header {
 }
 
 .hero_img{
-    margin: 20%;
+    margin: 10%;
     padding: 10%;
-    border-radius: 10rem;
+    border-radius: 5rem;
 }
 .btn {
     background-color: #00aaff;
@@ -234,9 +234,22 @@ header {
     border-radius: 8px;
 }
 
+.project-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #00aaff;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    color: #0088cc;
+}
+
+
 /* Contact Section */
 .contact {
-    padding: 80px 50px 5000px 80px;
+    padding: 80px 50px;
     text-align: center;
     justify-content: center;
     background-color: #0d0d0d;

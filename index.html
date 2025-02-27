@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaanvi Prabhakar</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <style>
     
@@ -15,9 +16,9 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#services">Services</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,8 +28,12 @@
             <h2> Hi, I'm <span>Jaanvi Prabhakar</span> </h1>
             <h3>Software Developer</h2>
             <p>Passionate about building software solutions.</p>
-            <button class="btn">Hire Me</button>
-            <button class="btn-outline">Let's Talk</button>
+            <button class="btn" onclick="window.open('https://drive.google.com/file/d/1E4DzMChbpNNzVf0A0z6yv4Qv93YAdGYa/view?usp=sharing','_blank')">Hire Me</button>
+            <button class="btn-outline" onclick="window.open('https://www.linkedin.com/in/jaanvi-prabhakar/','_blank')">LinkedIn</button>
+            <!-- Calendly badge widget begin -->
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/jaanviprabhakar5/30min', text: 'Let\'s Talk', color: '#0069ff', textColor: '#ffffff' }); }</script>
+            <!-- Calendly badge widget end -->
         </div>
         <div>
             <img src = "hero.jpg" alt="Jaanvi Prabhakar" class="hero_img" >
@@ -82,28 +87,41 @@
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project">
-                <h3>Anomaly Detection in GreenLake</h3>
+                <h3>Anomaly Detection in GreenLake Cloud Platform</h3>
+                <h4> Hewlett Packard Enterprise </h4>
                 <p>Developed a cloud-based anomaly detection system using Python and ML, presented to 500+ attendees.</p>
-                <span class = "tech-stack">Python, ML, Audit Log Analysis</span>
+                <span class = "tech-stack">Python, ML, Audit Log</span>
             </div>
 
             <div class="project">
-                <h3>English-Tamil Code-Switch SLI</h3>
-                <p>Created a dataset and trained CNN & RNN models for spoken language identification with 91%+ accuracy.</p>
+                <a href="https://drive.google.com/file/d/1c_mb3bvlj-ttO6aGKP5fLIooRaBE4weN/view" target="_blank"><h3>Code-Switch Spoken Language Indentification</h3></a>
+                <h4> Samsung PRISM </h4>
+                <p>Created a dataset and trained CNN & RNN models for spoken language identification with 91% and 97% accuracy.</p>
                 <span class="tech-stack">Python, NLP, ML</span>
             </div>
 
             <div class="project">
-                <h3>Defense Services Hackathon</h3>
+                <a href="https://devpost.com/software/he-4" target="_blank"><h3>Smartisation of Anti Anti-Infiltration Obstacle System</h3></a>
+                <h4>Defence Hackathon SRM 2021</h4>
                 <p>Implemented an Anti-Infiltration System using OpenCV to detect suspicious activity in surveillance footage.</p>
                 <span class="tech-stack">Python, OpenCV</span>
             </div>
         </div>
      </section>
 
-     <section id = "contact" class="contact">
+     <section id="recommend-book" class="recommend">
+        <h2>📖 Recommend Me a Book</h2>
+        <p>Search for a book and recommend for me to read it!</p>
 
-     </section>
+        <div class="recommend-container">
+            <input type="text" id="book-search" placeholder="Search for a book..." />
+            <button class="btn">Search</button>
+        </div>
+
+        <div id="search-results"></div>
+        <h3>📚 Recommended Books:</h3>
+        <ul id="recommended-books"></ul>
+    </section>
 
      <section id="contact" class="contact">
         <h2>Contact Me</h2>
@@ -113,6 +131,10 @@
             <textarea placeholder="Your Message" rows="4" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+
+        <h3> 📍Where To Find Me </h3>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.57160210945!2d-73.95744002389645!3d40.75573833493671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258dea6616d51%3A0x78a01682d5d8faf4!2s1%20E%20Loop%20Rd%2C%20New%20York%2C%20NY%2010044!5e0!3m2!1sen!2sus!4v1740690160386!5m2!1sen!2sus" width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
      <script src="script.js"></script>
