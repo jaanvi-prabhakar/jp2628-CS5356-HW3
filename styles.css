@@ -225,6 +225,10 @@ header {
     margin-bottom: 10px;
 }
 
+.project a{
+    text-decoration: none;
+}
+
 .tech-stack {
     display: inline-block;
     background: rgba(0, 170, 255, 0.2);
@@ -234,16 +238,71 @@ header {
     border-radius: 8px;
 }
 
-.project-link {
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: #00aaff;
-    transition: color 0.3s ease-in-out;
-    font-weight: bold;
+/* Recommend Book Section */
+.recommend {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #121212;
 }
 
-.project-link:hover {
-    color: #0088cc;
+.recommend-container {
+    margin-bottom: 20px;
+}
+
+.recommend input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #00aaff;
+    background: #1a1a1a;
+    color: white;
+}
+
+.recommend button {
+    padding: 10px 15px;
+    background: #00aaff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.recommend button:hover {
+    background: #0088cc;
+}
+
+#search-results {
+    margin-top: 20px;
+}
+
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.book-item p {
+    margin: 0;
+    color: white;
+}
+
+.recommend-btn {
+    background: #00aaff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.recommend-btn:hover {
+    background: #0088cc;
 }
 
 
@@ -292,4 +351,8 @@ header {
 
 .contact button:hover {
     background: #0088cc;
+}
+
+.contact h3{
+    margin: 50px 0px 10px 0px;
 }
