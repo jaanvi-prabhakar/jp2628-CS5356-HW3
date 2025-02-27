@@ -78,6 +78,11 @@ header {
     margin: 20px 0;
 }
 
+.hero_img{
+    margin: 20%;
+    padding: 10%;
+    border-radius: 10rem;
+}
 .btn {
     background-color: #00aaff;
     color: white;
@@ -117,9 +122,10 @@ header {
 .experience h2 {
     font-size: 2.8rem;
     margin-bottom: 40px;
-    color: #00aaff;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .experience-container {
@@ -179,9 +185,10 @@ header {
 .projects h2 {
     font-size: 2.8rem;
     margin-bottom: 40px;
-    color: #00aaff;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .projects-container {
@@ -225,4 +232,51 @@ header {
     padding: 5px 10px;
     font-size: 0.9rem;
     border-radius: 8px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 50px 5000px 80px;
+    text-align: center;
+    justify-content: center;
+    background-color: #0d0d0d;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #00aaff;
+    background: #1a1a1a;
+    color: white;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.contact button {
+    padding: 12px;
+    background: #00aaff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #0088cc;
 }
