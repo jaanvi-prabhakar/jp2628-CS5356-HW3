@@ -242,7 +242,7 @@ header {
 }
 
 .company-logo {
-    width: 12rem; /* Adjust size as needed */
+    width: 30%; /* Adjust size as needed */
     height: auto;
     border-radius: 5px; /* Optional: Makes logos slightly rounded */
 }
@@ -269,6 +269,21 @@ header {
     .job ul li {
         font-size: 0.9rem;
     }
+
+    .job-header {
+        display: flex;
+        flex-direction: column-reverse; /* Stack company name and logo */
+        align-items: center; /* Center-align both */
+        text-align: center;
+    }
+
+    .company-logo {
+        margin-top: 2%; /* Adds spacing between text and logo */
+        width: 45%; /* Slightly larger for mobile readability */
+        height: auto;
+        border-radius: 5px;
+    }
+
 }
 
 /* ========== Tablet Screens ========== */
