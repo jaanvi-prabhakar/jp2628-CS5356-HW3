@@ -234,6 +234,19 @@ header {
     text-decoration: underline;
 }
 
+.job-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.company-logo {
+    width: 12rem; /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: Makes logos slightly rounded */
+}
+
 /* ========== Mobile Screens ========== */
 @media (max-width: 768px) {
     .experience {
