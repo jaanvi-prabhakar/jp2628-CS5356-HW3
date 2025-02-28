@@ -11,6 +11,7 @@
 <body>
     <header>
         <nav>
+            <!-- TODO: Make responsive for mobile // add humberger menu-->
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -29,6 +30,7 @@
             <button class="btn-outline" onclick="window.open('https://www.linkedin.com/in/jaanvi-prabhakar/','_blank')">LinkedIn</button>
         </div>
         <div>
+            <!-- TODO: Change image -->
             <img src="images/hero.jpeg" alt="Jaanvi Prabhakar" class="hero_img">
         </div>
     </section>
@@ -37,7 +39,10 @@
         <h2>Experience</h2>
         <div class="experience-container">
             <div class="job">
-                <h3><a href="https://www.hpe.com/us/en/home.html" target="_blank">Hewlett Packard Enterprise</a></h3>
+                <div class="job-header">
+                    <h3><a href="https://www.hpe.com/us/en/home.html" target="_blank">Hewlett Packard Enterprise</a></h3>
+                    <img src="images/logo/hpe.png" class="company-logo">
+                </div>
                 <p><strong>Cloud Developer</strong> | Jan 2022 - Jun 2024</p>
                 <ul>
                     <li>Owned and delivered epics in critical microservices (inventory and subscription management).</li>
@@ -47,7 +52,10 @@
                 </ul>
             </div>
             <div class="job">
-                <h3><a href="https://www.siemens.com/in/en.html" target="_blank">Siemens Technology India</a></h3>
+                <div class="job-header">
+                    <h3><a href="https://www.siemens.com/in/en.html" target="_blank">Siemens Technology India</a></h3>
+                    <img src="images/logo/siemens.png" class="company-logo">
+                </div>
                 <p><strong>Software Development Intern</strong> | Jun 2021 - Aug 2021</p>
                 <ul>
                     <li>Developed 20% of new features for the Smart Estimator tool using Angular, C#, .Net.</li>
@@ -55,7 +63,10 @@
                 </ul>
             </div>
             <div class="job">
-                <h3>Dhayas Foundation</h3>
+                <div class="job-header">
+                    <h3>Dhayas Foundation</h3>
+                    <img src="images/logo/dhayas.png" class="company-logo">
+                </div>
                 <p><strong>Web Developer</strong> | Jun 2021 - Aug 2021</p>
                 <ul>
                     <li>Created wireframes for website.</li>
@@ -66,6 +77,9 @@
         </div>
      </section>
 
+     <!-- Riddle: Two in a corner, 1 in a room, 0 in a house, but 1 in a shelter. What am I? -->
+
+    <!-- TODO: make a carousel and add relevant images -->
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <div class="projects-container">
@@ -91,6 +105,7 @@
         </div>
     </section>
 
+    <!-- TODO: Retain/store past suggestions -->
     <section id="recommend-book" class="recommend">
         <h2>📖 Recommend Me a Book</h2>
         <p>Search for a book and recommend for me to read it!</p>
@@ -119,5 +134,7 @@
     </section>
 
     <script src="script.js"></script>
+
+    <!-- TODO: Add footer -->
 </body>
 </html>

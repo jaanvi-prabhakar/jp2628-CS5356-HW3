@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         searchResults.innerHTML = "<p>Searching...</p>";
-
+        // Easter Egg Spotted: Thank you for going through my code! 🐇🪺
         fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(searchTerm)}`)
             .then(response => response.json())
             .then(data => {
@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error("Error fetching books:", error);
             });
     }
+    // Riddle: If you drop me I’m sure to crack, but give me a smile and I’ll always smile back. What am I?
 
     // Recommend Book Function
     function recommendBook(title, author) {
@@ -113,3 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// TODO: Add a dynamic progress bar - 5 circles on the side that fill color as you progress through each main heading
