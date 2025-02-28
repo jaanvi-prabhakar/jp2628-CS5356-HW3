@@ -224,6 +224,10 @@ header {
     line-height: 1.6;
 }
 
+.job a {
+    text-decoration: none;
+}
+
 /* ========== Mobile Screens ========== */
 @media (max-width: 768px) {
     .experience {
